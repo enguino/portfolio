@@ -1,0 +1,189 @@
+.nav {
+    display: flex;
+    background-color: #b8b8b8;
+    color: black;
+    padding: 0.75rem;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+}
+
+.test1 {
+    display: flex;
+    flex: 5;
+    padding-left: 3rem;
+}
+
+.test2 {
+    display: flex;
+    flex: 1;
+}
+
+.test3 {
+    display: flex;
+    flex: 1;
+}
+
+.test4 {
+    display: flex;
+    flex: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex; 
+    flex-direction: column;
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(247, 247, 247, 0.18);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.07), rgba(0,0,0,0.45));
+    
+}
+
+.paragraph{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    width: fit-content; 
+    height: fit-content;
+    border-style: ridge;
+    border-color: rgb(172, 172, 172);
+    border-width: 7px;
+    border-radius: 10px;
+}
+
+#par1{
+    display: flex;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    margin: 2rem auto 0 auto; 
+}
+
+.lane2{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    height: 200px;
+    max-height: 200px;
+    overflow: visible;
+}
+
+#par2{
+    display: flex;
+    margin-right: 210px;
+    margin-top: 80px;
+    justify-content: left;
+    width: 700px;
+    height: 400px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+#par4{
+    display: flex;
+    position: relative;
+    background-color: rgb(200, 200, 200);
+    margin-right: 200px;
+    margin-top: 100px;
+    min-height: 100px;
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+    align-items: center;
+}
+
+#par3{
+    display: flex;
+    position: relative;
+    background-color: rgb(200, 200, 200);
+    margin-right: 60px;
+    min-height: 100px;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+}
+/* remove img: position:absolute globally for this effect, or override it: */
+
+
+.lane3{
+    display: flex;
+    justify-content: right;
+    min-width:100vw;
+    height: 300px;
+    max-height: 300px;
+    overflow: visible;
+}
+
+.lane4{
+    justify-content: center;
+    min-width:100vw;
+    height: 150px;
+    max-height: 300px;
+    overflow: visible;
+}
+
+.buttongroup{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+#button1{
+    margin-left: 55px;
+    flex: 2;
+}
+
+#button2{
+    margin-left: 40px;
+    flex: 1;
+}
+
+#button3{
+    flex: 1;
+}
+
+#button4{
+    flex: 2;
+}
+
+#button5{
+    flex: 2;
+}
+
+button{
+    padding: 1rem;
+    border-radius: 10%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    align-items: top;
+    margin-top: auto;
+    margin-bottom: 2rem;
+    background-color: rgb(200, 200, 200);
+    border-color: rgb(153, 153, 153);
+    border-width: 3px;
+}
+

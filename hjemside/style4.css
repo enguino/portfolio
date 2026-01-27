@@ -1,0 +1,148 @@
+.nav {
+    display: flex;
+    background-color: #dcdcdc;
+    color: black;
+    padding: 0.75rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex; 
+    flex-direction: column;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.07), rgba(0,0,0,0.45));
+    
+}
+
+.paragraph{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    width: fit-content; 
+    height: fit-content;
+    border-style: ridge;
+    border-color: rgb(172, 172, 172);
+    border-width: 7px;
+    border-radius: 10px;
+}
+
+#par1{
+    display: flex;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    margin: 2rem auto 0 auto; 
+}
+
+.lane2{
+    display: flex;
+    justify-content: right;
+    width:100%;
+    height: 200px;
+    max-height: 200px;
+    overflow: visible;
+}
+
+#par2{
+    display: flex;
+    background-color: rgb(200, 200, 200);
+    min-height: 100px;
+    margin-top: 50px;
+    margin-right: 40px;
+    padding-bottom: 110px;
+    padding-right: 130px;
+}
+
+#par3{
+    display: flex;
+    margin-top: 100px;
+    margin-right: 30px;
+    padding-right: 560px;
+    padding-bottom: 280px;
+    background-color: rgb(200, 200, 200);
+}
+
+.lane3{
+    display: flex;
+    justify-content: left;
+    min-width:100vw;
+    height: 300px;
+    max-height: 300px;
+    overflow: visible;
+}
+
+#par4{
+    display: flex;
+    background-color: rgb(200, 200, 200);
+    margin-left: 30px;
+    margin-top: 90px;
+    min-height: 100px;
+    padding-bottom: 150px;
+    padding-right: 250px;
+}
+
+.lane4{
+    display: flex;
+    justify-content: center;
+    min-width:100vw;
+    height: 150px;
+    max-height: 300px;
+    overflow: visible;
+}
+
+button{
+    padding: 1rem;
+    border-radius: 50%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    align-items: top;
+    margin-top: auto;
+    margin-bottom: 2rem;
+    background-color: rgb(200, 200, 200);
+    border-color: rgb(153, 153, 153);
+    border-width: 3px;
+}
+
+.test1 {
+    display: flex;
+    flex: 5;
+    padding-left: 3rem;
+}
+
+.test2 {
+    display: flex;
+    flex: 1;
+}
+
+.test3 {
+    display: flex;
+    flex: 1;
+}
+
+.test4 {
+    display: flex;
+    flex: 1;
+}

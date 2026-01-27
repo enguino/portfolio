@@ -1,0 +1,152 @@
+.nav {
+    display: flex;
+    background-color: #b8b8b8;
+    color: black;
+    padding: 0.75rem;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+}
+
+.test1 {
+    display: flex;
+    flex: 5;
+    padding-left: 3rem;
+}
+
+.test2 {
+    display: flex;
+    flex: 1;
+}
+
+.test3 {
+    display: flex;
+    flex: 1;
+}
+
+.test4 {
+    display: flex;
+    flex: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex; 
+    flex-direction: column;
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(247, 247, 247, 0.18);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.07), rgba(0,0,0,0.45));
+    max-height: 100vh;
+    max-width: auto;
+}
+
+.paragraph{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    width: fit-content; 
+    height: fit-content;
+    border-style: ridge;
+    border-color: rgb(172, 172, 172);
+    border-width: 7px;
+    border-radius: 10px;
+}
+
+#par1{
+    display: flex;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    margin: 2rem auto 0 auto; 
+}
+
+.lane1{
+    
+}
+
+#topbuttonleft{
+    margin-top: 100px;
+    overflow: visible;
+}
+
+.lane2{
+    display: flex;
+    justify-content: left;
+    margin-left: 100px;
+    width: 100%;
+    height: 400px;
+    max-height: 200px;
+    overflow: visible;
+}
+
+#par4{
+    display: flex;
+    position: relative;
+    background-color: rgb(200, 200, 200);
+    margin-top: 80px;
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    align-items: center;
+    
+}
+
+img {
+    width: 700px;
+}
+
+.lane3{
+    display: flex;
+    justify-content: right;
+    min-width:100vw;
+    height: 30px;
+    max-height: 300px;
+    overflow: visible;
+}
+
+.buttongroup{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.buttonborder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    margin-right: 280px;
+}
+
+.buttongroup button{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.lane4{
+    justify-content: center;
+    min-width:100vw;
+    height: 150px;
+    max-height: 300px;
+    overflow: visible;
+}
