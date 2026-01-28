@@ -39,6 +39,8 @@ body {
     font-family: Arial, sans-serif;
     display: flex; 
     flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 
 html, body {
@@ -52,7 +54,6 @@ main {
     background-color: rgba(247, 247, 247, 0.18);
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.07), rgba(0,0,0,0.45));
     max-height: 100vh;
-    max-width: auto;
 }
 
 .paragraph{
@@ -78,7 +79,8 @@ main {
 }
 
 .lane1{
-    
+    height: 10px;
+    width: auto;
 }
 
 #topbuttonleft{
@@ -88,8 +90,6 @@ main {
 
 .lane2{
     display: flex;
-    justify-content: left;
-    margin-left: 100px;
     width: 100%;
     height: 400px;
     max-height: 200px;
@@ -109,13 +109,12 @@ main {
 }
 
 img {
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
 }
 
 .lane3{
     display: flex;
-    justify-content: right;
-    min-width:100vw;
     height: 30px;
     max-height: 300px;
     overflow: visible;
@@ -126,6 +125,10 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+#paddingtopleft{
+    padding-left: 100px;
+}
+
 .buttonborder{
     display: flex;
     justify-content: center;
@@ -134,7 +137,6 @@ img {
     border-radius: 100%;
     width: 150px;
     height: 150px;
-    margin-right: 280px;
 }
 
 .buttongroup button{
@@ -149,4 +151,11 @@ img {
     height: 150px;
     max-height: 300px;
     overflow: visible;
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100vw;
+    max-height: 100vh;
 }
