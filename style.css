@@ -11,6 +11,8 @@ body{
     background-attachment: fixed;
     background-size: cover;
     color: black;
+    font-family: "Gabarito", sans-serif;
+    overflow: hidden;
 }
 
 .columns{
@@ -42,7 +44,7 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.3);   
 }
 
-#button3{
+#lightbutton{
     margin: 2rem;
     width: 2rem;
     height: 2rem;
@@ -68,9 +70,114 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.3);         
     width: 45rem;
     height: 25rem;
+    display: none;
 }
 
 .grids2{
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);         
+    width: 45rem;
+    height: 25rem;
+    display: none;
+}
+
+.grids3{
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);         
+    width: 45rem;
+    height: 25rem;
+    display: none;
+}
+
+.grids4{
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);         
+    width: 45rem;
+    height: 25rem;
+    display: grid;
+}
+
+.grids5{
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);         
+    width: 45rem;
+    height: 25rem;
+    display: none;
+}
+
+.grids6{
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);         
+    width: 45rem;
+    height: 25rem;
+    display: none;
+}
+
+.grids7{
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);         
+    width: 45rem;
+    height: 25rem;
+    display: none;
+}
+
+.grids8{
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);         
+    width: 45rem;
+    height: 25rem;
+    display: none;
+}
+
+.grids9{
     justify-items: center;
     align-items: center;
     display: grid;
@@ -119,6 +226,29 @@ button{
     border: 1px solid rgba(255, 255, 255, 0.3); 
     border-radius: 50%;  
     color: inherit;
+    animation-name: myAnimation;
+    animation-duration: 4s;
+}
+
+@keyframes myAnimation {
+  from {
+    box-shadow: 0 4px 30px rgba(91, 151, 255, 0.35);
+  }
+  to {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+button:hover{
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(129, 175, 255, 0.352);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 50%;  
+    color: inherit;
+
 }
 
 #duobutton{
@@ -137,28 +267,28 @@ button{
 
 }
 
-#tinybutton1{
+#interestbutton{
     width: 2rem;
     height: 2rem;
     flex-shrink: 0;
     flex-grow: 0;
 }
 
-#tinybutton2{
+#previousbutton{
     width: 2rem;
     height: 2rem;
     flex-shrink: 0;
     flex-grow: 0;
 }
 
-#tinybutton3{
+#nextbutton{
     width: 2rem;
     height: 2rem;
     flex-shrink: 0;
     flex-grow: 0;
 }
 
-#tinybutton4{
+#projectbutton{
     width: 2rem;
     height: 2rem;
     flex-shrink: 0;
@@ -169,6 +299,17 @@ button{
     margin-top: 2rem;
     width: 6rem;
     height: 6rem;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#gif{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
 }
 
 .lane2{
@@ -180,21 +321,18 @@ button{
     margin-top: auto;
 }
 
-.glass-container {
-        width: 300px;
-        padding: 20px;
-        border-radius: 15px;
-
-        /* Glass effect core */
-        background: rgba(255, 255, 255, 0.15); /* Transparent white */
-        backdrop-filter: blur(10px);           /* Blur background behind */
-        -webkit-backdrop-filter: blur(10px);   /* Safari support */
-
-        /* Optional styling */
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        text-align: center;
-    }
+.footer{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    border-radius: 2rem;
+}
 
 .buttoninfo {
     position: relative;
@@ -233,3 +371,18 @@ button{
     transform: translateY(-50%) translateX(-0.2rem);
     margin: 0.2rem;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Fully transparent */
+  }
+  to {
+    opacity: 1; /* Fully visible */
+  }
+}
+
+/* Class to apply fade-in */
+.fade-in {
+  animation: fadeIn 1.5s ease-in forwards; /* Duration: 1.5s */
+}
+
