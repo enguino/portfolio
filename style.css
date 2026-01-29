@@ -230,15 +230,10 @@ button{
     animation-duration: 4s;
 }
 
-@keyframes myAnimation {
-  from {
-    box-shadow: 0 4px 30px rgba(91, 151, 255, 0.35);
-  }
-  to {
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  }
+@keyframes myAnimation{
+  from {box-shadow: 0 4px 30px rgba(91, 151, 255, 0.35)};
+  to {box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)};
 }
-
 
 button:hover{
     border-radius: 100%;
@@ -370,19 +365,5 @@ button:hover{
 .rightside:hover::after {
     transform: translateY(-50%) translateX(-0.2rem);
     margin: 0.2rem;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0; /* Fully transparent */
-  }
-  to {
-    opacity: 1; /* Fully visible */
-  }
-}
-
-/* Class to apply fade-in */
-.fade-in {
-  animation: fadeIn 1.5s ease-in forwards; /* Duration: 1.5s */
 }
 
