@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const button2 = document.querySelector("#button2");
     const gif = document.querySelector("#gif");
 
-    const interestbutton = document.querySelector("#interestbutton");
+    const bigpreviousbutton = document.querySelector("#bigpreviousbutton");
     const previousbutton = document.querySelector("#previousbutton");
     const nextbutton = document.querySelector("#nextbutton");
-    const projectbutton = document.querySelector("#projectbutton");
+    const bignextbutton = document.querySelector("#bignextbutton");
 
     const grid1 = document.querySelector(".grids1");
     const grid2 = document.querySelector(".grids2");
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 5000);
     };
 
-    interestbutton.onclick = function(){
+    bigpreviousbutton.onclick = function(){
         if (anyVisible(grid4, grid5, grid6)) {
             grid4.style.display = "none"; 
             grid5.style.display = "none"; 
@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    projectbutton.onclick = function(){
+    bignextbutton.onclick = function(){
         if (anyVisible(grid4, grid5, grid6)) {
             grid4.style.display = "none"; 
             grid5.style.display = "none"; 

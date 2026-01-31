@@ -372,7 +372,7 @@ med stil og størrelse på border rundt seksjonen, og om border er avrundet. */
 
 /* denne seksjonen/knappen har høyde og bredde definert. */
 
-#interestbutton{
+#bigpreviousbutton{
     width: 2rem;
     height: 2rem;
 }
@@ -393,7 +393,7 @@ med stil og størrelse på border rundt seksjonen, og om border er avrundet. */
 
 /* -''- */
 
-#projectbutton{
+#bignextbutton{
     width: 2rem;
     height: 2rem;
 }
