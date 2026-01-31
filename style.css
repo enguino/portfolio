@@ -489,7 +489,7 @@ den 0.4 sekunder også på det.  */
 
 /* opacity 1, altså at den er fullt synlig. den er bare synlig mens man hoverer, etterpå 
 går den til de instillingene ovenfor. forklart transformY før, men X gjør at den flytter seg 
-horisontalt den vidden under transform-animasjonen. i dette tilfelle til venstre. */*/
+horisontalt den vidden under transform-animasjonen. i dette tilfelle til venstre. */
 
 .buttoninfo:hover::after { 
     opacity: 1; 
