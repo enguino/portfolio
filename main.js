@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
             grid5.style.display = "none"; 
             grid6.style.display = "none";
             grid1.style.display = "grid";
-            document.querySelector(".titlebg").textContent = "Interests";
+            document.querySelector(".titlebg").textContent = "About Me";
 
 
         } else if (anyVisible(grid7, grid8, grid9)) {
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
             grid8.style.display = "none"; 
             grid9.style.display = "none"; 
             grid4.style.display = "grid";
-            document.querySelector(".titlebg").textContent = "About Me";
+            document.querySelector(".titlebg").textContent = "Projects";
  
         }
     };
@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
             grid5.style.display = "none"; 
             grid6.style.display = "none";
             grid7.style.display = "grid";
-            document.querySelector(".titlebg").textContent = "Projects";
+            document.querySelector(".titlebg").textContent = "Interests";
             
 
         } else if (anyVisible(grid1, grid2, grid3)) {
@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
             grid2.style.display = "none"; 
             grid3.style.display = "none"; 
             grid4.style.display = "grid"; 
-            document.querySelector(".titlebg").textContent = "About Me";
+            document.querySelector(".titlebg").textContent = "Projects";
 
         }
     };

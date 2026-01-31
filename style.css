@@ -1,25 +1,43 @@
+/* fjernes space utenfor elementer mellom den og siden, 
+og på innsiden. + fyller inn siden med elementet selv når 
+et element inni tar f.eks 100% space i høyde uten å gå utenfor 
+siden som et element. */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* høyden fyller opp elementet helt, høydemessig. fargen 
+graderer ovenfra og ned med 2 hvitfarger. texten er svart, alle 
+fonter er stilen gabarito. siden kan ikke dras rundt ettersom 
+elementer ikke kan flyttes ut av siden. */
+
 body{
     height: 100%;
     background-color: linear-gradient(to bottom right, #fefefe, #e0e0e0);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
     color: black;
     font-family: "Gabarito", sans-serif;
     overflow: hidden;
 }
+
+/* display flex gjør at jeg kan bruke flex kommandoer her som 
+flex-direction. columns gjør at ting legger seg oppå hverandre 
+og ikke ved siden av som rows. høyden i vh fyller hele skjermen. */
 
 .columns{
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
+
+/* første seksjon og ligner en header, er en container på toppen 
+som har space inni seg på størrelsen 1 rem (varierer på 
+størrelsen av skjermen). justify, alle ting sentrerer seg i 
+midten fra venstre side og til høyre. justify content center, 
+gjør det i midten fra ovenfra og ned. høyden på denne seksjonen 
+er 5rem, oppe og nede.*/
 
 .lane1{
     padding: 1rem;
@@ -28,6 +46,19 @@ body{
     align-items: center;
     height: 5rem;
 }
+
+/* dette er en container som inneholder tittelen blant annet. 
+størrelsen inni denne seksjonen på teksten er 1.5rem. flex 1 
+sier at den skal ta opp all space i forhold til hvor mye space 
+det andre elementet tar. ettersom det ikke er et annet element 
+som tar opp flex-space tar den alt og utvider seg. justify og 
+align var forklart tidligere. sentreres fra side til side og 
+fra oppe og nede. neste er høyden og vidden på denne seksjonen. 
+så er det hvor avrundet borderen rundt denne seksjonen er. 
+altså border radius. og det er fargebakgrunn. pluss hvor blurry 
+bakgrunnen er. en farge på en skygge som omringer utenfor denne 
+seksjonen. og border i seg selv som er 1px vid, med solid som 
+stilen og en farge. */
 
 .titlebg{
     font-size: 1.5rem;
@@ -44,6 +75,10 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.3);   
 }
 
+/* space rundt knappen er 2rem. høyde og bredde er 2rem. 
+bakgrunnsfargen graderer fra topp og ned en gul til en mørkere 
+gul farge. */
+
 #lightbutton{
     margin: 2rem;
     width: 2rem;
@@ -51,12 +86,32 @@ body{
     background-image: linear-gradient(to bottom, rgb(252, 238, 43), rgba(234, 186, 40, 0.824));
 }
 
+/* en container som tar opp all space som er der. blir da 
+sentrert i midten av parentcontainer som sentrerer alle 
+elementer inni denselv. space-around gir space mellom den selv 
+og andre elementer den deler plass med på sidene av alle 
+elementene og mellom elementene. align items center, vertikal 
+sentrering av elementer inni. */
+
 .flexgrid{
     flex: 1;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
+/* ting inni sentreres horisontalt og vertikalt. display grid 
+gjør at den deler elementer i flere seksjoner, hvor antall 
+seksjoner varierer på antall elementer og plassering går an på 
+template columns. den står på 1fr, så 2 seksjoner lages av 1fr 
+størrelsen side om side før den legger tredje seksjon under den 
+første. avrundingen på border er 2rem på alle kanter. 
+bakgrunnsfarge på seksjonen og blur effekt på bakgrunnen er der. 
+skygge rundt seksjonen også med en farge. border er 1px vid, 
+stilen er solid, farge på border osv. bredde og høyde på seksjonen er definert. 
+display: none gjemmer hele seksjonen inntil den blir synlig med 
+et annet display som f.eks grid, som vanligvis er brukt for at 
+den skal kunne dele seg i de forskjellige seksjonene som tidligere beskrevet. */
 
 .grids1{
     justify-items: center;
@@ -70,8 +125,10 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.3);         
     width: 45rem;
     height: 25rem;
-    display: none;
+    display: grid;
 }
+
+/* -''- */
 
 .grids2{
     justify-items: center;
@@ -88,6 +145,8 @@ body{
     display: none;
 }
 
+/* -''- */
+
 .grids3{
     justify-items: center;
     align-items: center;
@@ -103,6 +162,10 @@ body{
     display: none;
 }
 
+/* alt er likt som ovenfor utenom at denne er synlig pga 
+display: grid. den gjør at seksjonerer seg selv utifra grid 
+template columns som beskrevet før. */
+
 .grids4{
     justify-items: center;
     align-items: center;
@@ -114,8 +177,10 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.3);         
     width: 45rem;
     height: 25rem;
-    display: grid;
+    display: none;
 }
+
+/* -''- */
 
 .grids5{
     justify-items: center;
@@ -132,6 +197,8 @@ body{
     display: none;
 }
 
+/* -''- */
+
 .grids6{
     justify-items: center;
     align-items: center;
@@ -146,6 +213,8 @@ body{
     height: 25rem;
     display: none;
 }
+
+/* -''- */
 
 .grids7{
     justify-items: center;
@@ -162,6 +231,8 @@ body{
     display: none;
 }
 
+/* -''- */
+
 .grids8{
     justify-items: center;
     align-items: center;
@@ -176,6 +247,8 @@ body{
     height: 25rem;
     display: none;
 }
+
+/* -''- */
 
 .grids9{
     justify-items: center;
@@ -192,6 +265,12 @@ body{
     display: none;
 }
 
+/* containeren som har bilde inni seg. dens border har ikke en 
+stil men er avrundet. høyde og bredde er definert. den har 
+space til venstre utenfor containeren som tar 2rem i plass 
+som flytter hele containeren litt til høyre. evt blir også 
+andre elementer pushet av det. */
+
 .imgcontainer{
     border-radius: 2rem;
     width: 20rem;
@@ -199,24 +278,40 @@ body{
     margin-left: 2rem;
 }
 
+/* bildet spesifikt inni containeren .imgcontainer fyller høyde og bredde av containeren sin. 
+object-fit gjør dimensjonene til bildet mer naturlig, men kutter av litt av bildet. 
+border-radius avrunder bildet. */
+
 .imgcontainer img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 2rem;
-    overflow: hidden;
 }
+
+/* har space mellom seg og containeren på alle sider, som er 2rem vid. */
 
 .textcontainer{
     padding: 2rem;
 }
+
+/* seksjonen som inneholder en seksjon og en knapp, bruker flex kommandoer for å legge de 2 
+elementene oppå hverandre i en kolonne, men gjør dem begge sentrert vertikalt og horisontalt 
+i hvert deres lag. all tekst som er i noen av disse seksjonene blir også sentrert. */
 
 .buttongroup{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
+
+/* avrunder alle knapper helt. bakgrunnsfarge, blur, og skygge bak seksjonen er med. 
+border rundt den er 1px vid med stilen solid, og fargen på teksten i alle knappe-elementer 
+tar den fra parentcontainere. alle animasjoner som er tildelt knappen trengs å referes til 
+med et navn, som er myanimation. disse knappene har denne spesifike animasjonen, som defineres nede. 
+og alle animasjoner er 4 sekunder lange. */
 
 button{
     border-radius: 100%;
@@ -230,10 +325,17 @@ button{
     animation-duration: 4s;
 }
 
+/* keyframes viser til begynnelsen og slutten av animasjonen, hvor på begynnelsen den er blåish, 
+også tilbake til en svakere grå som er standard skyggen bak knappene. */
+
 @keyframes myAnimation{
   from {box-shadow: 0 4px 30px rgba(91, 151, 255, 0.35)};
   to {box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)};
 }
+
+/* når man holder musen over knappen så har den dette designet som er lik knappen når den ikke 
+holdes over. forskjellen er bare fargen på skyggen bak som blir blå, som får knappen til å virke 
+som om den gløder der og da. */
 
 button:hover{
     border-radius: 100%;
@@ -245,6 +347,12 @@ button:hover{
     color: inherit;
 
 }
+
+/* displayet viser til at den skal seksjonere seg i rader og rekker. rekkene/kolonnene skal det 
+bare være 3 av, og på en 1fr størrelse. radene skal det også bare bli 3 av, på en 1fr størrelse. 
+elementer inni sentreres vertikalt og horisontalt, hvor bredden og høyden av hele seksjonen er 
+9rem på begge. bakgrunnsfargen er definert, bakgrunnen er blurry, skyggen bak er definert, samme 
+med stil og størrelse på border rundt seksjonen, og om border er avrundet. */
 
 #duobutton{
     display: grid;
@@ -262,33 +370,36 @@ button:hover{
 
 }
 
+/* denne seksjonen/knappen har høyde og bredde definert. */
+
 #interestbutton{
     width: 2rem;
     height: 2rem;
-    flex-shrink: 0;
-    flex-grow: 0;
 }
+
+/* -''- */
 
 #previousbutton{
     width: 2rem;
     height: 2rem;
-    flex-shrink: 0;
-    flex-grow: 0;
 }
+
+/* -''- */
 
 #nextbutton{
     width: 2rem;
     height: 2rem;
-    flex-shrink: 0;
-    flex-grow: 0;
 }
+
+/* -''- */
 
 #projectbutton{
     width: 2rem;
     height: 2rem;
-    flex-shrink: 0;
-    flex-grow: 0;
 }
+
+/* space mellom seksjon/knapp på toppen av den legger en ekstra 2rem til i vidde. høyde + bredde 
+på knapp er definert. bakgrunnsfarge også. */
 
 #button2{
     margin-top: 2rem;
@@ -296,6 +407,11 @@ button:hover{
     height: 6rem;
     background: rgba(255, 255, 255, 0.3);
 }
+
+/* denne er gjemt pga display. posisjonen er fastsatt, bredde og høyde tar all plass den kan av 
+hele containeren, men posisjonen er resettet pga top og left som er på 0. så den holder seg 
+mellom standard verdiene av skjermen. pointer events none, den kan ikke klikkes. 
+(så det ikke blir i veien for de elementene man kan interagere med bak den.) */
 
 #gif{
     display: none;
@@ -307,19 +423,25 @@ button:hover{
     pointer-events: none;
 }
 
-.lane2{
+/* egen seksjon som sentrerer elementer inni. har definert høyde. */
 
+.lane2{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 5rem;
-    margin-top: auto;
 }
+
+/* elementer inni sentreres, vidden justerer seg automatisk utifra det som er inni, det er 20px 
+i mellomrom mellom det inni og kanten av containeren, containerens border avrundes, 
+det er bakgrunnsfarge, blur på bakgrunn og skygge rundt containeren, og stil pluss vidde på 
+borderen på containeren er definert. pluss det at containerborderen er avrundet. */
 
 .footer{
     display: flex;
     justify-content: center;
-    width: 300px;
+    align-items: center;
+    width: auto;
     padding: 20px;
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.15);
@@ -329,15 +451,29 @@ button:hover{
     border-radius: 2rem;
 }
 
+/* den vises som en blokk og ikke flex container osv, og posisjonen justerer seg om den ligger 
+med andre elementer. */
+
 .buttoninfo {
     position: relative;
     display: inline-block;
 }
 
+/* denne seksjonen legger til tekst som den henter fra variablen som er lagt inn. posisjonen er 
+fastsatt, så elementet ikke interagerer med de andre og flytter på ting. den ligger til høyre for 
+knappen, og lengden mellom de 2 er størrelsen på 140# av den knappen. den sentreres også i midten 
+av (50% top) vertikalt i parentcontaineren, men det er bare fra toppen av seksjonen. translateY tar 
+og flytter midten av seksjonen opp mot der toppen av seksjonen var. og inni, så har den 0.4rem i 
+space på sidene av elementene, og 0.8rem i space på toppen og bunnen av elementene. bakgrunn, 
+blur, border, pointer event og color: inherit har blitt forklart før. men opacity er en annen 
+måte man kan gjemme seksjoner på. transiton, vel, når den går fra synlig til ikke synlig så har den 
+en delay på 0.4 sekunder, for opacity delen. mens transform er når den flytter på seg, da bruker 
+den 0.4 sekunder også på det.  */
+
 .buttoninfo::after{
     content: attr(data-label);
     position: absolute;
-    right: 110%;
+    right: 140%;
     top: 50%;
     transform: translateY(-50%);
     padding: 0.4rem 0.8rem; 
@@ -347,23 +483,32 @@ button:hover{
     border: 1px solid rgba(255, 255, 255, 0.3);  
     opacity: 0; 
     pointer-events: none; 
-    transition: opacity 0.2s ease, transform 0.2s ease; 
+    transition: opacity 0.4s ease, transform 0.4s ease; 
     color: inherit;
-    margin: 0.2rem;
 }
 
-.buttoninfo:hover::after { opacity: 1; transform: translateY(-50%) translateX(0.2rem); }
+/* opacity 1, altså at den er fullt synlig. den er bare synlig mens man hoverer, etterpå 
+går den til de instillingene ovenfor. forklart transformY før, men X gjør at den flytter seg 
+horisontalt den vidden under transform-animasjonen. i dette tilfelle til venstre. */*/
+
+.buttoninfo:hover::after { 
+    opacity: 1; 
+    transform: translateY(-50%) translateX(-0.2rem);
+}
+
+/* denne er lik de ovenfor, men right: auto er for seksjonen i seg selv, for at den skal justere 
+seg etter elementet inni og bli større enn den fra høyre av. */
 
 .rightside::after {
-    left: 110%;
+    left: 140%;
     right: auto;
     padding: 0.4rem 0.8rem; 
     border-radius: 0.6rem;
-    margin: 0.2rem;
 }
 
+/* samme som før men den flytter seg horisontalt til høyre under transform. */
+
 .rightside:hover::after {
-    transform: translateY(-50%) translateX(-0.2rem);
-    margin: 0.2rem;
+    transform: translateY(-50%) translateX(0.2rem);
 }
 
